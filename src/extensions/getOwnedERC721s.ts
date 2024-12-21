@@ -40,7 +40,8 @@ export async function getOwnedERC721s(
 		detectMethod({
 			method:
 				"function tokenOfOwnerByIndex(address owner, uint256 index) external view returns (uint256)",
-			contract,
+			// contract,
+			availableSelectors: ["0x2f745c59"],
 		}),
 	]);
 
